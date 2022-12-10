@@ -8,6 +8,7 @@ class App{
     }
 
     public function parseUrl(){
+        // routing url
         if(isset($_GET['url'])){
             // menghapus tanda \ pada akhir url
             $url = rtrim($_GET['url'],"/");
