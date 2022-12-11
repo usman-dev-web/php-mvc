@@ -7,6 +7,6 @@ class Controller{
 
     public function model($model){
         require_once "../app/models/" . $model . ".php";
-        return new User_model();
+        return new $model;
     }
 }
