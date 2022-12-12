@@ -40,15 +40,15 @@
                 <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
                     <div class="form-group">
                         <label for="nama">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="masukkan nama">
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="masukkan nama" required>
                     </div>
                     <div class="form-group">
                         <label for="nrp">NRP</label>
-                        <input type="number" class="form-control" id="nrp" name="nrp" placeholder="masukkan nrp">
+                        <input type="number" class="form-control" id="nrp" name="nrp" placeholder="masukkan nrp" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="masukkan email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="masukkan email" required>
                     </div>
                     <div class="form-group">
                         <label for="jurusan">Jurusan</label>
