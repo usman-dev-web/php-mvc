@@ -12,6 +12,25 @@
             <button type="button" class="btn btn-primary tombolTambahData mt-4" data-toggle="modal" data-target="#formModal">
                 Tambah Data Mahasiswa
             </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <!-- form trigger search -->
+            <form action="<?= BASEURL; ?>/mahasiswa/cari" method="post">
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Cari Mahasiswa" name="keyword" id="keyword" autocomplete="off">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="submit" id="tombolCari">Cari</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
             <h3 class="mt-4">Daftar Mahasiswa : </h3>
             <ul class="list-group mt-4">
                 <?php foreach ($data["mhs"] as $mhs) : ?>
